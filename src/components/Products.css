@@ -1,0 +1,14 @@
+.createcss {
+  height: 450px;
+  display: flex;
+  overflow: scroll;
+}
+.setcsssingleimg {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 90px;
+  height: 94px;
+}
+.setdc {
+  margin: 15px;
+}
