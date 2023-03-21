@@ -1,0 +1,25 @@
+.createcss{
+  height: 450px;
+  display: flex;
+  overflow: scroll;
+  
+}
+.setcsssingleimg{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 90px;
+  height: 94px;
+}
+.setdc{
+  margin: 15px;
+}
+.seth{
+  width: 150px;
+height: 140px;
+overflow: auto;
+}
+.addcart{
+  padding-left: 9px;
+border-radius: 19px;
+background: burlywood;
+}
