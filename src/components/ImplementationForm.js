@@ -6,6 +6,7 @@ function LoginForm() {
   const [gender, setGender] = useState('Male');
   const [address, setAddress] = useState('Irving, Dallas');
   const [array, setArray] = useState([]);
+  const[setsuccess, settsuccess]=useState()
 
   const getval = (event) => {
     event.preventDefault();
@@ -21,6 +22,12 @@ function LoginForm() {
         Address: address,
       },
     ]);
+    if(array)
+    {
+      settsuccess("Successfully Submitted..!!!")
+    }
+    
+
   };
  
 
@@ -28,7 +35,7 @@ function LoginForm() {
     <form>
       <h2>
         Sample Form When you click submit You can see all values in array Format
-        in console.!
+        in console.! and When you click on submit a success message is displayed.!!
       </h2>
       <div>
         <label>Name : </label>
@@ -66,6 +73,8 @@ function LoginForm() {
       <div>
         <button onClick={getval}>Submit</button>
       </div>
+      <br></br>
+      <b style={{color:"green"}}>{setsuccess}</b>
     </form>
   );
 }
